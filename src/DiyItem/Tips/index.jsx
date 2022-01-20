@@ -19,7 +19,7 @@ export default function Tips() {
   return (
     <STips>
       {tips.map((tip) => (
-        <p>
+        <p key={tip.comment}>
           {tip.comment} - {tip.username}
         </p>
       ))}

@@ -35,7 +35,7 @@ export default function PicTest() {
       >
         {pictures.map((picture) => (
           <div key="picture.picture" className="mainContainer">
-            <SwiperSlide key={picture.id} style={{ width: '180px' }}>
+            <SwiperSlide key={picture.picture} style={{ width: '180px' }}>
               <div>
                 <img src={picture.picture} alt="Réalisation d'un utilisateur" />
                 <p>{picture.username}</p>

@@ -4,7 +4,6 @@ import { BrowserRouter } from 'react-router-dom';
 import { Reset } from 'styled-reset';
 import './style.css';
 import App from './App';
-import './reset.css';
 
 ReactDOM.render(
   <React.StrictMode>
