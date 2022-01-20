@@ -54,7 +54,6 @@ const SDiyItem = styled.div`
   //-----------------------------------------------------------------------------ClassName CSS
   .logo {
     height: 30px;
-    margin-right: 220px;
   }
   .imgContainer {
     margin: 0 0 30px 0;
@@ -70,6 +69,29 @@ const SDiyItem = styled.div`
     margin: 0;
     display: flex;
     justify-content: space-around;
+  }
+  .headHomepage {
+    width: 90vw;
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+  }
+
+  .identifyCart {
+    display: flex;
+  }
+
+  .identify {
+    font-size: 15px;
+    padding: 5px;
+    justify-content: center;
+    color: #505971;
+    font-weight: 450;
+  }
+
+  .cart {
+    height: 20px;
+    margin: 5px;
   }
 
   //------------------------------------------------------------------------------ROLLER ANIMATION
