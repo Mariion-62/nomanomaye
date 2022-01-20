@@ -34,7 +34,6 @@ function DiyItem() {
         <Accordion title="Listes des articles" rowContent="TEST 2" />
 
         <Accordion title="Ils ont testé" rowContent="TEST 3" />
-
         <Accordion
           title="Conseils de nos utilisateurs"
           columnContent="TEST 4"
