@@ -1,13 +1,20 @@
 import styled from 'styled-components';
 
 const SAccordion = styled.div`
+  button {
+    background-color: none;
+    position: relative;
+    opacity: 1;
+  }
   .cubeTitle {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
     letter-spacing: 2px;
     overflow: hidden;
   }
 
   .content {
-    color: #14685b;
     visibility: hidden;
     height: 0;
     opacity: 0;
@@ -42,7 +49,7 @@ const SAccordion = styled.div`
     overflow: visible;
     padding: 1rem;
     opacity: 1;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 25px;
     transition: all 0.4s ease-in;
     font-weight: 500;

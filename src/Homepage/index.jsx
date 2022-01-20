@@ -10,6 +10,7 @@ import arrow from 'assets/arrow.png';
 import matelas from 'assets/matelas.png';
 import tabouret from 'assets/tabouret.png';
 
+import { Link } from 'react-router-dom';
 import SHome from './style';
 
 function Homepage() {
@@ -42,7 +43,13 @@ function Homepage() {
           <h3>Meilleures ventes</h3>
           <h3>Perceuses, visseuse...</h3>
         </section>
-        <img className="inspiration" src={inspiration} alt="Nos inspirations" />
+        <Link to="/nosInspirations">
+          <img
+            className="inspiration"
+            src={inspiration}
+            alt="Nos inspirations"
+          />
+        </Link>
         <section className="selectSection">
           <div className="headSelect">
             <div className="text">
