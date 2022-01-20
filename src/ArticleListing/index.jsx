@@ -23,13 +23,15 @@ function ArticleListing() {
       <section className="container">
         {articles.map((article) => (
           <div className="imgFlex">
-            <div className="try">
-              <div className="infoArticle">
-                <p className="priceArticle">{article.price}€</p>
-                <p className="nameArticle">{article.name}</p>
+            <a href={`${article.link}`} target="_blank" rel="noreferrer">
+              <div className="try">
+                <img src={article.image} alt="" className="imgArticle" />
+                <div className="infoArticle">
+                  <p className="nameArticle">{article.name}</p>
+                  <p className="priceArticle">{article.price}€</p>
+                </div>
               </div>
-              <img src={article.image} alt="" className="imgArticle" />
-            </div>
+            </a>
           </div>
         ))}
         <button type="submit" className="btnArticle">

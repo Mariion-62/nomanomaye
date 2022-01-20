@@ -1,14 +1,14 @@
 import Accordion from 'Accordion';
 import ArticleListing from 'ArticleListing';
+import PicTest from './PicTest';
+import Tips from './Tips';
 import SDiyItem from './style';
 import buffet from '../buffetDeco.jpg';
-import logo from '../assets/logoManoMano.png';
 import wood from '../assets/wood.jpeg';
 
 function DiyItem() {
   return (
     <SDiyItem>
-      <img className="logo" src={logo} alt="logo" />
       <article>
         <div className="imgContainer">
           <div className="tape" />
@@ -34,15 +34,17 @@ function DiyItem() {
 
         <Accordion title="Liste des articles" rowContent={<ArticleListing />} />
 
-        <Accordion title="Ils ont testé" rowContent="TEST 3" />
+        <Accordion
+          title=" &#33; &#128525; Nos utilisateurs ont testé "
+          rowContent={<PicTest />}
+        />
 
         <Accordion
-          title="Conseils de nos utilisateurs"
-          columnContent="TEST 4"
+          title="&#33; &#128591; Conseils de nos utilisateurs "
+          columnContent={<Tips />}
         />
       </article>
     </SDiyItem>
   );
 }
-
 export default DiyItem;

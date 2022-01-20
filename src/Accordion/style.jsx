@@ -1,10 +1,25 @@
 import styled from 'styled-components';
 
 const SAccordion = styled.div`
-  button {
+  button.cubeTitle {
     background-color: none;
     position: relative;
     opacity: 1;
+    background-image: url(${(props) => props.arrow});
+    background-size: 16px 16px;
+    background-position: right 28px center;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-color: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding-left: 30px;
+    height: 4rem;
+
+    h3 {
+      font-size: 1rem;
+    }
   }
   .cubeTitle {
     font-family: 'Open Sans', sans-serif;

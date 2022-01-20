@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 const SArticleListing = styled.div`
   .container {
-    width: 100vw;
+    margin: 0;
+    width: 100%;
     height: 100vh;
     background-color: lightgray;
-    border-radius: 8px;
-    overflow: auto;
+    overflow: scroll;
   }
 
   .imgFlex {
@@ -58,13 +58,23 @@ const SArticleListing = styled.div`
     font-size: 18px;
     border-radius: 8px;
     margin-bottom: 20px;
-    background-color: #00e8cb;
-    color: black;
+    color: white;
+    background-color: #1e3c87;
+    border: none;
   }
 
   button:hover {
-    color: white;
-    background-color: #1e3c87;
+    color: black;
+    background-color: #00e8cb;
+  }
+
+  a {
+    text-decoration: none;
+    color: #1e3c87;
+  }
+
+  a:hover {
+    color: #c0640e;
   }
 `;
 
