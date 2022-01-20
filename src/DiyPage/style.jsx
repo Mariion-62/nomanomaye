@@ -3,6 +3,37 @@ import styled from 'styled-components';
 const SDiyPage = styled.section`
   background-color: #f5f6f7;
   font-family: 'Open Sans', sans-serif;
+
+  .titleWrapper {
+    margin: 30px 20px 30px 0;
+    width: 100vw;
+    height: 150px;
+    overflow: hidden;
+    img {
+      width: 92vw;
+      position: relative;
+      opacity: 0.8;
+      margin: 30px 0 30px 0px;
+      rotate: 15deg;
+    }
+    h1 {	
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    position: absolute;
+     z-index: 1;
+     text-align: center;
+     color: white;
+     font-weight: bold;
+     letter-spacing: 1px;
+     font-size: 30px;
+     margin: 30px 0 30px 0;
+     width: 100%;
+     padding: 20px;
+     animation: typing 2s, blink 0.5s infinite alternate;
+     white-space: nowrap;
+     overflow: hidden;
+    }
+    }
+  }
   article {
     width: 95vw;
   }
@@ -12,20 +43,7 @@ const SDiyPage = styled.section`
     align-items: center;
     justify-content: center;
   }
-  h1 {
-    text-align: center;
-    color: black;
-    text-decoration: underline;
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: 30px;
-    margin: 30px 0 30px 0;
-    width: 100%;
-    padding: 20px;
-    animation: typing 2s, blink 0.5s infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-  }
+
 
   @keyframes typing {
     from {
@@ -53,6 +71,33 @@ const SDiyPage = styled.section`
   }
   .imgResults {
     width: 100%;
+  }
+
+  .headHomepage {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+  }
+
+  .logo {
+    height: 30px;
+  }
+
+  .identifyCart {
+    display: flex;
+  }
+
+  .identify {
+    font-size: 15px;
+    padding: 5px;
+    justify-content: center;
+    color: #505971;
+    font-weight: 450;
+  }
+
+  .cart {
+    height: 20px;
+    margin: 5px;
   }
   section {
     box-shadow: rgba(80, 78, 77, 0.13) 0px 10px 36px 0px,

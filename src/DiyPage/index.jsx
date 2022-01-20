@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import cart from 'assets/cart.png';
 import logo from '../assets/logoManoMano.png';
+import splash from '../assets/splash.jpeg';
 import SDiyPage from './style';
 
 function DiyPage() {
@@ -9,23 +11,32 @@ function DiyPage() {
 
   useEffect(() => {
     axios.get(`http://localhost:5000/items`).then(({ data }) => {
-      console.log(data);
       setItems(data);
     });
   }, []);
 
-  console.log(items);
   return (
     <SDiyPage>
-      <img className="logo" src={logo} alt="logo" />
+      <header className="headHomepage">
+        <Link to="/">
+          <img className="logo" src={logo} alt="ManoMano" />
+        </Link>
+        <div className="identifyCart">
+          <h2 className="identify">Mon compte</h2>
+          <img className="cart" src={cart} alt="panier" />
+        </div>
+      </header>
       <main>
         <div>
-          <h1>Nos inspirations</h1>
+          <div className="titleWrapper">
+            <h1>Nos inspirations</h1>
+            <img src={splash} alt="splash" />
+          </div>
         </div>
         {items.map((item) => {
           return (
             <article>
-              <Link to="/details">
+              <Link to={`/${item.id}`}>
                 <section>
                   <img className="imgResults" src={item.picture} alt="" />
                   <p>
