@@ -1,3 +1,5 @@
+import PicTest from './PicTest';
+import Tips from './Tips';
 import SDiyItem from './style';
 import buffet from '../buffetDeco.jpg';
 import logo from '../assets/logoManoMano.png';
@@ -16,10 +18,8 @@ function DiyItem() {
       <section>
         <h3>Liste articles</h3>
       </section>
-      <section>
-        <h3>Ils ont testé</h3>
-        <h3>Conseils de nos utilisateurs! </h3>
-      </section>
+      <PicTest />
+      <Tips />
     </SDiyItem>
   );
 }
