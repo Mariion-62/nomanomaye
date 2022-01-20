@@ -9,7 +9,6 @@ export default function Tips() {
     axios
       .get(`http://localhost:5000/items/${id}/tips`)
       .then(({ data }) => {
-        console.log(data);
         setTips(data);
       })
       .catch((e) => {

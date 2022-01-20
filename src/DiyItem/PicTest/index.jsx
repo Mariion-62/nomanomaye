@@ -16,7 +16,6 @@ export default function PicTest() {
     axios
       .get(`http://localhost:5000/items/${id}/pictures`)
       .then(({ data }) => {
-        console.log(data);
         setPictures(data);
       })
       .catch((e) => {
@@ -35,7 +34,7 @@ export default function PicTest() {
         className="mySwiper"
       >
         {pictures.map((picture) => (
-          <div key="picture.id" className="mainContainer">
+          <div key="picture.picture" className="mainContainer">
             <SwiperSlide key={picture.id} style={{ width: '180px' }}>
               <div>
                 <img src={picture.picture} alt="Réalisation d'un utilisateur" />

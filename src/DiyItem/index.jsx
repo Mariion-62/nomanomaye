@@ -34,12 +34,12 @@ function DiyItem() {
         <Accordion title="Listes des articles" rowContent="TEST 2" />
 
         <Accordion
-          title="Nos utilisateurs ont testé ! &#128525; "
+          title=" &#33; &#128525; Nos utilisateurs ont testé "
           rowContent={<PicTest />}
         />
 
         <Accordion
-          title="Conseils de nos utilisateurs ! &#128591;"
+          title="&#33; &#128591; Conseils de nos utilisateurs "
           columnContent={<Tips />}
         />
       </article>

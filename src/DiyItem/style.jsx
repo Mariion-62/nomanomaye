@@ -43,7 +43,10 @@ const SDiyItem = styled.div`
     color: Black;
     font-family: 'Open Sans', sans-serif;
     border-bottom: #a5a5a5 1px solid;
-    madding: 10px;
+  }
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
   }
   #content2 {
     padding: 0px;
