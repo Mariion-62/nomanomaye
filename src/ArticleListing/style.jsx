@@ -5,15 +5,16 @@ const SArticleListing = styled.div`
     margin: 0;
     width: 100%;
     height: 100vh;
-    background-color: lightgray;
     overflow: scroll;
   }
 
   .imgFlex {
+    background-color: #fcf0ce;
     width: 100vw;
     height: 20vh;
     display: flex;
     justify-content: center;
+    margin: 15px 0;
   }
 
   .try {
@@ -26,6 +27,8 @@ const SArticleListing = styled.div`
   .imgArticle {
     width: 100px;
     height: 100px;
+    object-fit: contain;
+    padding: 6px;
     border-radius: 80px;
     background-color: white;
     margin: 17px 27px;
@@ -59,18 +62,13 @@ const SArticleListing = styled.div`
     border-radius: 8px;
     margin-bottom: 20px;
     color: white;
-    background-color: #1e3c87;
+    background-color: #c0640e;
     border: none;
-  }
-
-  button:hover {
-    color: black;
-    background-color: #00e8cb;
   }
 
   a {
     text-decoration: none;
-    color: #1e3c87;
+    color: black;
   }
 
   a:hover {
