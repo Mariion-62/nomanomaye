@@ -32,12 +32,14 @@ Accordion.propTypes = {
   title: propTypes.string,
   columnContent: propTypes.string,
   rowContent: propTypes.string,
+  // backImg: propTypes.string,
 };
 
 Accordion.defaultProps = {
   title: '',
   columnContent: '',
   rowContent: '',
+  // backImg: '',
 };
 
 export default Accordion;
