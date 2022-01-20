@@ -19,7 +19,6 @@ const SAccordion = styled.div`
     height: 0;
     opacity: 0;
     overflow: hidden;
-    padding: 0 1rem;
     transition: all 0.1s ease-in;
   }
 
@@ -27,7 +26,6 @@ const SAccordion = styled.div`
     visibility: visible;
     height: auto;
     overflow: visible;
-    padding: 1rem;
     opacity: 1;
     font-size: 22px;
     transition: all 0.4s ease-in;
@@ -39,7 +37,6 @@ const SAccordion = styled.div`
     height: 0;
     opacity: 0;
     overflow: hidden;
-    padding: 0 1rem;
     transition: all 0.4s ease-in;
   }
 
@@ -47,7 +44,6 @@ const SAccordion = styled.div`
     visibility: visible;
     height: auto;
     overflow: visible;
-    padding: 1rem;
     opacity: 1;
     font-family: 'Open Sans', sans-serif;
     font-size: 25px;

@@ -32,10 +32,7 @@ function DiyItem() {
           backImg={wood}
         />
 
-        <Accordion
-          title="Listes des articles"
-          rowContent={<ArticleListing />}
-        />
+        <Accordion title="Liste des articles" rowContent={<ArticleListing />} />
 
         <Accordion title="Ils ont testé" rowContent="TEST 3" />
 
