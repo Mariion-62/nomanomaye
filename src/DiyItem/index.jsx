@@ -1,13 +1,14 @@
 import Accordion from 'Accordion';
+import ArticleListing from 'ArticleListing';
 import { Link, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import TutoStep from 'TutoStep';
-import cart from 'assets/cart.png';
 import axios from 'axios';
-import SDiyItem from './style';
+import cart from 'assets/cart.png';
 import logo from '../assets/logoManoMano.png';
 import PicTest from './PicTest';
 import Tips from './Tips';
+import SDiyItem from './style';
 
 function DiyItem() {
   const [itemInfo, setItemInfo] = useState([]);
@@ -49,7 +50,7 @@ function DiyItem() {
 
         <Accordion title="Tutoriel et étapes" columnContent={<TutoStep />} />
 
-        <Accordion title="Listes des articles" rowContent="TEST 2" />
+        <Accordion title="Liste des articles" rowContent={<ArticleListing />} />
 
         <Accordion
           title=" &#33; &#128525; Nos utilisateurs ont testé "

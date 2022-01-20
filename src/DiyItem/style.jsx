@@ -22,7 +22,7 @@ const SDiyItem = styled.div`
     border-bottom-right-radius: 20% 15%; */
     color: #0c193a;
     width: 100vw;
-    margin: 50px auto 0;
+    /* margin: 50px auto 0; */
     font-size: 17px;
     line-height: 28px;
     box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
@@ -58,7 +58,7 @@ const SDiyItem = styled.div`
     position: relative;
     display: flex;
     justify-content: center;
-    margin: 0 0 30px 18px;
+    margin: 31px 0 30px 18px;
     width: 90vw;
     height: auto;
     img {
