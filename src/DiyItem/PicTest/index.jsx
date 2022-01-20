@@ -5,13 +5,14 @@ import 'swiper/swiper.min.css';
 import 'swiper/components/pagination/pagination.min.css';
 import SwiperCore, { Pagination } from 'swiper';
 import axios from 'axios';
+import { useParams } from 'react-router-dom';
 import SPicTest from './style';
 
 SwiperCore.use([Pagination]);
 
 export default function PicTest() {
   const [pictures, setPictures] = useState([]);
-  const id = 1;
+  const { id } = useParams();
   useEffect(() => {
     axios
       .get(`http://localhost:5000/items/${id}/pictures`)

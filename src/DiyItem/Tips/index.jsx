@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import STips from './style';
 
 export default function Tips() {
@@ -7,7 +8,8 @@ export default function Tips() {
   const [tips, setTips] = useState([]);
   const [tipComment, setTipComment] = useState('...');
   const [dataTip, setDataTip] = useState([]);
-  const id = 1;
+  const [toggle, setToggle] = useState(false);
+  const { id } = useParams();
 
   const handleClick = () => {
     setShowInput(true);
@@ -16,14 +18,21 @@ export default function Tips() {
   const handleSearchChange = (e) => {
     setTipComment(e.target.value);
   };
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    setDataTip([id, 10, tipComment])
+    await setDataTip([id, 10, tipComment]);
+    setShowInput(false);
+  };
+  useEffect(() => {
+    axios
       .post(`http://localhost:5000/items/tips`, [dataTip])
+      .then(() => {
+        setToggle(!toggle);
+      })
       .catch((e) => {
         console.log(e);
       });
-  };
+  }, [dataTip]);
 
   useEffect(() => {
     axios
@@ -34,7 +43,7 @@ export default function Tips() {
       .catch((e) => {
         console.log(e);
       });
-  }, []);
+  }, [toggle]);
 
   return (
     <STips>
@@ -71,7 +80,6 @@ export default function Tips() {
               value="Partage un conseil !"
             />
           </div>
-          {console.log(tipComment)}
         </form>
       )}
     </STips>
