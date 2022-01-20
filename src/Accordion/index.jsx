@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import propTypes from 'prop-types';
+import arrow from 'assets/arrow-bottom.svg';
 import SAccordion from './style';
 
 function Accordion({ title, columnContent, rowContent }) {
@@ -10,7 +11,7 @@ function Accordion({ title, columnContent, rowContent }) {
     setActive(!active);
   };
   return (
-    <SAccordion>
+    <SAccordion arrow={arrow}>
       <div className="container y proximity-scroll-snapping" dir="rtl">
         <div className={`bloc ${active && 'active'}`}>
           <button type="button" className="cubeTitle" onClick={handleToggle}>

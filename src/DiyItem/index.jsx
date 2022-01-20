@@ -6,6 +6,8 @@ import TutoStep from 'TutoStep';
 import cart from 'assets/cart.png';
 import SDiyItem from './style';
 import logo from '../assets/logoManoMano.png';
+import PicTest from './PicTest';
+import Tips from './Tips';
 
 function DiyItem() {
   const [itemInfo, setItemInfo] = useState([]);
@@ -49,10 +51,14 @@ function DiyItem() {
 
         <Accordion title="Listes des articles" rowContent="TEST 2" />
 
-        <Accordion title="Ils ont testé" rowContent="TEST 3" />
         <Accordion
-          title="Conseils de nos utilisateurs"
-          columnContent="TEST 4"
+          title=" &#33; &#128525; Nos utilisateurs ont testé "
+          rowContent={<PicTest />}
+        />
+
+        <Accordion
+          title="&#33; &#128591; Conseils de nos utilisateurs "
+          columnContent={<Tips />}
         />
       </article>
     </SDiyItem>

@@ -40,16 +40,17 @@ const SDiyItem = styled.div`
     font-weight: 700;
   }
   h3 {
-    background-color: #0c193a;
-    color: white;
+    color: Black;
     font-family: 'Open Sans', sans-serif;
+    border-bottom: #a5a5a5 1px solid;
   }
-  button {
-    background-color: none;
-    border: none;
-    width: 100%;
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
   }
-
+  #content2 {
+    padding: 0px;
+  }
   //-----------------------------------------------------------------------------ClassName CSS
   .logo {
     height: 30px;
@@ -107,7 +108,8 @@ const SDiyItem = styled.div`
     position: absolute;
     overflow: hidden;
     animation: animate-paint 3s ease-in-out 1;
-    background-color: #ff912a;
+    background-color: #c0640e;
+    color: white;
   }
 
   /* Roller */
@@ -198,12 +200,12 @@ const SDiyItem = styled.div`
   @keyframes animate-paint {
     0% {
       background-color: #ffa149;
-      color: #1f3e8f;
+      color: #d1bea2;
       width: 100%;
     }
     100% {
-      background-color: #ff912a;
-      color: #0c193a;
+      background-color: #c0640e;
+      color: white;
       width: 100%;
     }
   }
