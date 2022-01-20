@@ -1,4 +1,5 @@
 import Accordion from 'Accordion';
+import ArticleListing from 'ArticleListing';
 import SDiyItem from './style';
 import buffet from '../buffetDeco.jpg';
 import logo from '../assets/logoManoMano.png';
@@ -15,7 +16,10 @@ function DiyItem() {
 
         <Accordion title="Tutoriel et étapes" columnContent="TEST 1" />
 
-        <Accordion title="Listes des articles" rowContent="TEST 2" />
+        <Accordion
+          title="Listes des articles"
+          rowContent={<ArticleListing />}
+        />
 
         <Accordion title="Ils ont testé" rowContent="TEST 3" />
 
