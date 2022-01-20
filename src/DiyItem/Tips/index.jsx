@@ -19,7 +19,6 @@ export default function Tips() {
 
   return (
     <STips>
-      <h3>Conseils de nos utilisateurs ! &#128591; </h3>
       {tips.map((tip) => (
         <p>
           {tip.comment} - {tip.username}

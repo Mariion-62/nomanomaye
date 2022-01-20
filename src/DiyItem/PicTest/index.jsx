@@ -26,8 +26,6 @@ export default function PicTest() {
 
   return (
     <SPicTest>
-      <h3>Nos utilisateurs ont testé ! &#128525; </h3>
-      {console.log(pictures)}
       <Swiper
         slidesPerView={2}
         spaceBetween={10}
@@ -37,8 +35,8 @@ export default function PicTest() {
         className="mySwiper"
       >
         {pictures.map((picture) => (
-          <div className="mainContainer">
-            <SwiperSlide key={picture.id}>
+          <div key="picture.id" className="mainContainer">
+            <SwiperSlide key={picture.id} style={{ width: '180px' }}>
               <div>
                 <img src={picture.picture} alt="Réalisation d'un utilisateur" />
                 <p>{picture.username}</p>

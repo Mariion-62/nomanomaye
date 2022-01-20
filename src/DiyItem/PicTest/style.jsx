@@ -1,17 +1,24 @@
 import styled from 'styled-components';
 
 const SPicTest = styled.section`
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  background: #fcf0ce;
+  padding-top: 20px;
+
   .swiper-container {
     width: 100%;
-    height: 300px;
+    height: 350px;
     background: #fcf0ce;
     padding: 10px;
   }
   .swiper-pagination {
-    bottom: 0px;
+    bottom: 20px;
   }
   .swiper-slide {
     height: 287px;
+    width: !180px;
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -34,6 +41,7 @@ const SPicTest = styled.section`
 
     div {
       height: 100%;
+      width: 95%;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
