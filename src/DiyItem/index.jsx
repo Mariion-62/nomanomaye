@@ -1,9 +1,9 @@
 import Accordion from 'Accordion';
 import { Link, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import axios from 'axios';
 import TutoStep from 'TutoStep';
 import cart from 'assets/cart.png';
+import axios from 'axios';
 import SDiyItem from './style';
 import logo from '../assets/logoManoMano.png';
 import PicTest from './PicTest';

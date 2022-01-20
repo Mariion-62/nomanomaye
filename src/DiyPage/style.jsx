@@ -5,8 +5,8 @@ const SDiyPage = styled.section`
   font-family: 'Open Sans', sans-serif;
 
   .titleWrapper {
-    margin: 30px 20px 30px 0;
-    width: 100vw;
+    margin: 30px 0 30px 0;
+    width: 96vw;
     height: 150px;
     overflow: hidden;
     img {
@@ -14,7 +14,7 @@ const SDiyPage = styled.section`
       position: relative;
       opacity: 0.8;
       margin: 30px 0 30px 0px;
-      rotate: 15deg;
+      rotate: 10deg;
     }
     h1 {	
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
@@ -27,7 +27,6 @@ const SDiyPage = styled.section`
      font-size: 30px;
      margin: 30px 0 30px 0;
      width: 100%;
-     padding: 20px;
      animation: typing 2s, blink 0.5s infinite alternate;
      white-space: nowrap;
      overflow: hidden;
@@ -75,7 +74,7 @@ const SDiyPage = styled.section`
 
   .headHomepage {
     display: flex;
-    margin: 10px;
+    padding-top: 10px;
     justify-content: space-between;
   }
 
@@ -85,6 +84,7 @@ const SDiyPage = styled.section`
 
   .identifyCart {
     display: flex;
+    justify-content: flex-end;
   }
 
   .identify {
