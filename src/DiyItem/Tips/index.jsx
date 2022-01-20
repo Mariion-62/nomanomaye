@@ -23,6 +23,7 @@ export default function Tips() {
           {tip.comment} - {tip.username}
         </p>
       ))}
+      <button type="button">! Partage un conseil </button>
     </STips>
   );
 }

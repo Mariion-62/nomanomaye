@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const SAccordion = styled.div`
-  button {
+  button.cubeTitle {
     background-color: none;
     position: relative;
     opacity: 1;
