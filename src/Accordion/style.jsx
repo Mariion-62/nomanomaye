@@ -34,7 +34,6 @@ const SAccordion = styled.div`
     height: 0;
     opacity: 0;
     overflow: hidden;
-    padding: 0 1rem;
     transition: all 0.1s ease-in;
   }
 

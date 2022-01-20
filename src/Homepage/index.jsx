@@ -20,7 +20,7 @@ function Homepage() {
         <header className="headHomepage">
           <img className="logo" src={logoManoMano} alt="ManoMano" />
           <div className="identifyCart">
-            <h2 className="identify">Identifiez-vous</h2>
+            <h2 className="identify">Mon compte</h2>
             <img className="cart" src={cart} alt="panier" />
           </div>
         </header>
