@@ -26,17 +26,16 @@ const SDiyItem = styled.div`
     font-size: 17px;
     line-height: 28px;
     box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
   }
 
   h1 {
-    width: 80vw;
-    margin-left: 35px;
-    padding: 10px 0 0 0;
-    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 80px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    text-align: center;
+    font-size: 24px;
     font-weight: 700;
   }
   h3 {
@@ -56,11 +55,12 @@ const SDiyItem = styled.div`
     height: 30px;
   }
   .imgContainer {
-    margin: 0 0 30px 0;
-    width: 80vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 31px 0 30px 18px;
+    width: 90vw;
     height: auto;
-    aspect-ratio: 1/1;
-    overflow: hidden;
     img {
       width: 100%;
     }
@@ -98,18 +98,17 @@ const SDiyItem = styled.div`
   .load {
     width: 100%;
     height: 100px;
-    overflow: hidden;
   }
 
   /* Paint */
 
   .paint {
-    width: 100%;
+    width: 100vw;
     position: absolute;
     overflow: hidden;
     animation: animate-paint 3s ease-in-out 1;
-    background-color: #c0640e;
     color: white;
+    background-color: #fb8d36;
   }
 
   /* Roller */
@@ -120,7 +119,7 @@ const SDiyItem = styled.div`
     height: 161px;
     animation: animate-roller 2s ease-in-out 1;
     z-index: 3;
-    top: 65%;
+    top: 46%;
     left: -75%;
   }
 
@@ -199,13 +198,13 @@ const SDiyItem = styled.div`
 
   @keyframes animate-paint {
     0% {
-      background-color: #ffa149;
-      color: #d1bea2;
+      background-color: #fb8d36;
+      color: #ffffff;
       width: 100%;
     }
     100% {
-      background-color: #c0640e;
-      color: white;
+      background-color: #fb8d36;
+      color: #ffffff;
       width: 100%;
     }
   }
@@ -227,11 +226,14 @@ const SDiyItem = styled.div`
   //------------------------------------------TAPE
 
   .tape {
-    background-color: hsla(0, 0%, 100%, 0.2);
+    position: absolute;
+    top: 0%;
+    right: -5%;
+    background-color: hsla(0, 0%, 100%, 0.5);
     box-shadow: inset 0 0 1em 0.5em hsla(0, 0%, 100%, 0.1);
     height: 3em;
     position: absolute;
-    transform: rotate(-30deg);
+    transform: rotate(30deg);
     width: 9em;
     -webkit-filter: drop-shadow(0 1px 1px hsla(0, 0%, 0%, 0.3));
   }
@@ -247,7 +249,7 @@ const SDiyItem = styled.div`
   .tape:after {
     background-image: linear-gradient(
         45deg,
-        transparent 50%,
+        transparent 20%,
         hsla(0, 0%, 100%, 0.3) 50%
       ),
       linear-gradient(-45deg, transparent 50%, hsla(0, 0%, 100%, 0.3) 50%);
@@ -257,7 +259,7 @@ const SDiyItem = styled.div`
   .tape:before {
     background-image: linear-gradient(
         135deg,
-        transparent 50%,
+        transparent 20%,
         hsla(0, 0%, 100%, 0.3) 50%
       ),
       linear-gradient(-135deg, transparent 50%, hsla(0, 0%, 100%, 0.3) 50%);

@@ -1,6 +1,11 @@
 import { useEffect, useState } from 'react';
-import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import youtubeLogo from 'assets/youtubeLogo.png';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.min.css';
+import 'swiper/swiper.min.css';
+import 'swiper/components/pagination/pagination.min.css';
+import axios from 'axios';
 import STutoAndStep from './style';
 
 function TutoStep() {
@@ -33,15 +38,24 @@ function TutoStep() {
     <>
       {tutoInfos && stepInfos ? (
         <STutoAndStep>
-          <a href={tutoInfos.video}>Cliquez sur notre vidéo tuto</a>
-          {stepInfos.map((info) => {
-            return (
-              <section className="infoTutos">
-                <span>{info.numero}</span>
-                <p>{info.description}</p>
-              </section>
-            );
-          })}
+          <a href={tutoInfos.video}>
+            <img className="youtubeLogo" src={youtubeLogo} alt="" />
+            Notre vidéo tuto ici !
+          </a>
+          <Swiper slidesPerView={1} spaceBetween={10} className="mySwiper">
+            {stepInfos.map((info) => {
+              return (
+                <SwiperSlide key={info.numero} style={{ height: '280px' }}>
+                  <div className="tutoWrapper">
+                    <section className="infoTutos">
+                      <span id="numero">Etape {info.numero}</span>
+                      <p id="description">{info.description}</p>
+                    </section>
+                  </div>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
         </STutoAndStep>
       ) : (
         ''

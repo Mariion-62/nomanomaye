@@ -1,10 +1,11 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import SArticleListing from './style';
 
 function ArticleListing() {
   const [articles, setArticles] = useState([]);
-  const id = 1;
+  const { id } = useParams();
 
   useEffect(() => {
     axios
@@ -19,7 +20,6 @@ function ArticleListing() {
 
   return (
     <SArticleListing>
-      {console.log(articles)}
       <section className="container">
         {articles.map((article) => (
           <div className="imgFlex">

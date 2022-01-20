@@ -18,13 +18,14 @@ const SAccordion = styled.div`
     height: 4rem;
 
     h3 {
-      font-size: 1rem;
+      font-size: 1.3rem;
+      text-align: start;
     }
   }
   .cubeTitle {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 30px;
     letter-spacing: 2px;
     overflow: hidden;
   }
@@ -42,7 +43,6 @@ const SAccordion = styled.div`
     height: auto;
     overflow: visible;
     opacity: 1;
-    font-size: 22px;
     transition: all 0.4s ease-in;
     font-weight: 500;
   }
@@ -61,7 +61,6 @@ const SAccordion = styled.div`
     overflow: visible;
     opacity: 1;
     font-family: 'Open Sans', sans-serif;
-    font-size: 25px;
     transition: all 0.4s ease-in;
     font-weight: 500;
   }
