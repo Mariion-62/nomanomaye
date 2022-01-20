@@ -1,9 +1,9 @@
-import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper.min.css';
 import 'swiper/components/pagination/pagination.min.css';
+import axios from 'axios';
 import SwiperCore, { Pagination } from 'swiper';
 import SPicTest from './style';
 
