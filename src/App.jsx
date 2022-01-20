@@ -6,9 +6,8 @@ import DiyPage from './DiyPage';
 function App() {
   return (
     <>
-      <Homepage />
       <Routes>
-        <Route path="/" element="" />
+        <Route path="/" element={<Homepage />} />
         <Route path="/nosInspirations" element={<DiyPage />} />
         <Route path="/details" element={<DiyItem />} />
       </Routes>
