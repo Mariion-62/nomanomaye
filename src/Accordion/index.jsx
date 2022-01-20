@@ -12,7 +12,7 @@ function Accordion({ title, columnContent, rowContent }) {
   };
   return (
     <SAccordion arrow={arrow}>
-      <div className="container y proximity-scroll-snapping" dir="rtl">
+      <div className="container y proximity-scroll-snapping" dir="ltr">
         <div className={`bloc ${active && 'active'}`}>
           <button type="button" className="cubeTitle" onClick={handleToggle}>
             <h3>{title}</h3>
